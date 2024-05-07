@@ -11,9 +11,9 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// app.get("/chek", (req, res) => {
-//   res.send("Hello World");
-// });
+app.get("/chek", (req, res) => {
+  res.send("Hello World");
+});
 app.use("/api", news);
 
 module.exports = app;
