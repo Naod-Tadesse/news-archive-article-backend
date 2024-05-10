@@ -1,5 +1,6 @@
 const axios = require("axios");
 const { News } = require("../models/news-model");
+
 exports.run = async () => {
   const axiosInstance = axios.create({
     baseURL: "https://newsapi.org/v2",
