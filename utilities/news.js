@@ -37,7 +37,7 @@ exports.run = async () => {
           dateOfSave: dateOfsave,
         };
       });
-      console.log(data);
+
       data.map(async (item) => {
         try {
           const newD = new News(item);
